@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import contactsActions from 'redux/contacts/contacts-actions';
 import { getContacts } from 'redux/contacts/contacts-selector';
-import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
 
 const ContactForm = () => {
@@ -87,11 +86,6 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-ContactForm.propTypes = {
-  name: PropTypes.string,
-  number: PropTypes.number,
-};
 
 // const mapDispatchToProps = dispatch => ({
 //   onSubmit: (name, number) =>

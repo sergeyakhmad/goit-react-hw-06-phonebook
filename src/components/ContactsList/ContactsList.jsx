@@ -1,5 +1,4 @@
 import { useSelector, useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
 import contactsActions from 'redux/contacts/contacts-actions';
 import { getVisibleContacts } from 'redux/contacts/contacts-selector';
 import s from './ContactsList.module.css';
@@ -28,16 +27,6 @@ const ContactsList = () => {
 };
 
 export default ContactsList;
-
-ContactsList.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
-    })
-  ),
-};
 
 // const mapStateToProps = ({ contacts: { items, filter } }) => ({
 //   contacts: getVisibleContacts(items, filter),

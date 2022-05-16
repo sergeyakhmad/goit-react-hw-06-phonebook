@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
 import contactsActions from 'redux/contacts/contacts-actions';
 import { getFilter } from 'redux/contacts/contacts-selector';
 import s from './Filter.module.css';
@@ -23,10 +22,6 @@ const Filter = () => {
 };
 
 export default Filter;
-
-Filter.propTypes = {
-  value: PropTypes.string,
-};
 
 // const mapStateToProps = state => ({
 //   value: state.contacts.filter,
