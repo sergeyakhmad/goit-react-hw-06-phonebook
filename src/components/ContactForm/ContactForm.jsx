@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import contactsActions from '../../redux/contacts/contacts-actions';
-import PropTypes, { number } from 'prop-types';
+import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
 
 const ContactForm = ({ onSubmit }) => {
