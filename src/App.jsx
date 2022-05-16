@@ -1,14 +1,9 @@
-// import { useState } from 'react';
-// import useLocalStorage from './hooks/useLocalStorage';
 import ContactsList from './components/ContactsList/ContactsList';
 import ContactForm from './components/ContactForm/ContactForm';
 import Filter from './components/Filter/Filter';
 import s from './App.module.css';
 
 export default function App() {
-  // const [contacts, setContacts] = useLocalStorage('contacts', []);
-  // const [filter, setFilter] = useState('');
-
   return (
     <div className={s.container}>
       <h1 className={s.phoneBook}>PhoneBook</h1>
