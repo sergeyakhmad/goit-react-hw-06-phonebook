@@ -11,15 +11,6 @@ const ContactForm = () => {
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
 
-  /*
-      contacts.some(
-        contact => contact.name.toLowerCase() === name.toLowerCase()
-      )
-    ) {
-      return alert(`${name} is already in contacts.`);
-    }
-  */
-
   const handleChange = e => {
     const { name, value } = e.currentTarget;
 
